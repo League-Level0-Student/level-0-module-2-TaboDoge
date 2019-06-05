@@ -15,6 +15,8 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
+import java.util.EventObject;
+import java.util.Random;
 public class RockPaperScissors extends JPanel implements ActionListener{
   
 	private JFrame window = new JFrame("Rock Paper Scissors");
@@ -75,13 +77,13 @@ public class RockPaperScissors extends JPanel implements ActionListener{
     public void actionPerformed(ActionEvent e) {
         
         //1. Run the program and play many rounds of Rock Paper Scissors. Does the computer always choose the same thing?
-
+    	//same
         //2. Change the value of opponentSelection to be a random number between 0 and 2;
 	//   Don't forget to create a Random object.
-	    
+	  Random j = new Random();
         //2. Change the value of opponentSelection to be a random number between 0 and 2; 
         int opponentSelection = 0;
-        
+        opponentSelection = j.nextInt(3);
         //3. Run the program again. Is the result different?
  
         int selection = 0;
