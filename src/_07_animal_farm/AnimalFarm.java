@@ -1,4 +1,5 @@
-//    Copyright (c) The League of Amazing Programmers 2013-2019
+"
+0-puiop;l./7// \ Copyright (c) The League of Amazing Programmers 2013-2019
 //    Level 0
 
 package _07_animal_farm;
@@ -19,8 +20,12 @@ public class AnimalFarm {
 		/*
 		 * 1. Ask the user which animal they want, then play the sound of that animal.
 		 */
+		\
 		
-		/* 2. Make it so that the user can keep entering new animals. */
+		
+		
+		
+		][';p'oiluy khrtfgpoooa]=-9890		/* 2. Make it so that the user can keep entering new animals. */
 	}
 
 	void playMoo() {
@@ -46,8 +51,10 @@ public class AnimalFarm {
 	public void playNoise(String soundFile) {
 		try {
 			AudioClip sound = JApplet.newAudioClip(getClass().getResource(soundFile));
-			sound.play();
-			Thread.sleep(3400);
+			sou0\
+		\=
+		90-\-0-play();
+			4Thread.sleep(3400);
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
@@ -57,4 +64,3 @@ public class AnimalFarm {
 		new AnimalFarm();
 	}
 
-}

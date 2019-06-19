@@ -4,7 +4,7 @@
 
 package _05_magic_8_ball;
 
-import java.util.Random;
+
 
 import javax.swing.JOptionPane;
 
@@ -19,8 +19,8 @@ public class Magic8Ball {
 	
 	// 2. Make a variable that will hold a random number and put a random number into this variable using "new Random().nextInt(4)"
 	int r = 0;
-	int e=3;
-	r = new Random(e).nextInt(4);
+	int e=0;
+	r = new Random().nextInt(4);
 	// 3. Print out this variable
 //JOptionPane.showMessageDialog(null, r);
 	// 4. Get the user to enter a question for the 8 ball
@@ -39,14 +39,15 @@ else if (r == (1)) {
 }
 	// 7. If the random number is 2
 else if (r == (2)) {
-    JOptionPane.showMessageDialog(null, "Maybe you should ask Google becuase they are smart and made my smartphone, the Google Pixel 2 XL and it is good like the awnser you may be given if you ask Google.");
+    JOptionPane.showMessageDialog(null, "Maybe you should ask Google");
 }
 	// -- tell the user "Maybe you should ask Google?"
 
 	// 8. If the random number is 3
-
+else if (r ==(3)) {
 	// -- write your own answer
-
+JOptionPane.showMessageDialog(null, "ghnjml;?");
 	}
+}
 }
 
