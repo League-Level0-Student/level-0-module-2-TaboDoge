@@ -1,5 +1,4 @@
-"
-0-puiop;l./7// \ Copyright (c) The League of Amazing Programmers 2013-2019
+// Copyright (c) The League of Amazing Programmers 2013-2019
 //    Level 0
 
 package _07_animal_farm;
@@ -20,14 +19,43 @@ public class AnimalFarm {
 		/*
 		 * 1. Ask the user which animal they want, then play the sound of that animal.
 		 */
-		\
+		String e= "";
+		e= JOptionPane.showInputDialog ("What animal: (1)llama, (2)me-gusta, (3)cat, (4)cow, (5)duck, (6)dog");
+		if (e.equals("1")) {
+			playLlama();
+		}
+		if (e.equals("2")) {
+			playMegusta();
+		}
+		if (e.equals("3")) {
+			playCat();
+		}
 		
-		
-		
-		
-		][';p'oiluy khrtfgpoooa]=-9890		/* 2. Make it so that the user can keep entering new animals. */
+	if (e.equals("4")) {
+		playMoo();
+	
 	}
-
+	if (e.equals("5")) {
+		playQuack();
+	}
+	
+    if (e.equals("6")) {
+	playWoof();
+	}
+	}
+/* 2. Make it so that the user can keep entering new animals. */
+	void playLlama() {
+		playNoise(llamaFile);
+	}
+	
+	void playMegusta(){
+		playNoise(MegustaFile);
+	}
+	
+	void playCat() {
+		playNoise(meowFile);
+	}
+	
 	void playMoo() {
 		playNoise(mooFile);
 	}
@@ -45,16 +73,14 @@ public class AnimalFarm {
 	String woofFile = "woof.wav";
 	String meowFile = "meow.wav";
 	String llamaFile = "llama.wav";
-
+	String MegustaFile = "me-gusta.wav";
 	/* Ignore this stuff */
 
 	public void playNoise(String soundFile) {
 		try {
 			AudioClip sound = JApplet.newAudioClip(getClass().getResource(soundFile));
-			sou0\
-		\=
-		90-\-0-play();
-			4Thread.sleep(3400);
+			sound.play();
+			Thread.sleep(3400);
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
@@ -62,5 +88,7 @@ public class AnimalFarm {
 
 	public static void main(String[] args) {
 		new AnimalFarm();
+	
 	}
+}
 

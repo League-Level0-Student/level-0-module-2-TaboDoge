@@ -16,7 +16,7 @@ public class Validation {
 		
 		System.out.println(r);
 
-		// 1. Use each value of randomNumber to give the user a random compliment.
+		// 1. Use each value of randomNumber to ask the user a random question.
 		if (r == 1) {
 			JOptionPane.showInputDialog("When does your summer start/has started?");
 		} else if (r == 2) {
