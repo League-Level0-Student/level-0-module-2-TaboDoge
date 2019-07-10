@@ -6,6 +6,8 @@ package _05_magic_8_ball;
 
 
 
+import java.util.Random;
+
 import javax.swing.JOptionPane;
 
 public class Magic8Ball {

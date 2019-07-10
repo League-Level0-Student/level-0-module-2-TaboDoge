@@ -3,7 +3,7 @@
 
 
 package _08_safe_cracker;
-
+import java.util.Random;
 import java.applet.AudioClip;
 import java.io.File;
 import java.net.MalformedURLException;
@@ -23,10 +23,14 @@ public class SafeCracker {
 		 * combinations
 		 */
 		
-
+		for(int i = 0; i <10000000; i++) {
+			
+		tryCode(i);
+		}
 	}
 
 	static void tryCode(int guess) {
+		
 		System.out.println("trying " + guess);
 
 		int secretCode = 9999999 - wekncrzpasfdkjhcfjse;
