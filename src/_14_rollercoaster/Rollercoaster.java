@@ -10,7 +10,12 @@ public static void main(String[] args) {
 	r = JOptionPane.showInputDialog( "What is your height (in inches)?");
 	
 	int num = Integer.parseInt(r);
-	System.out.println(num);
+	 if (num > 48) {
+	JOptionPane.showMessageDialog(null, "You can ride");
 	}
+	 else {
+		JOptionPane.showMessageDialog(null, "You aren't tall enough"); 
+	 }
+	 }
 	}
-
+	

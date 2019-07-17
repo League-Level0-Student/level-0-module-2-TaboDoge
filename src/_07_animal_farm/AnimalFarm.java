@@ -24,22 +24,22 @@ public class AnimalFarm {
 		if (e.equals("1")) {
 			playLlama();
 		}
-		if (e.equals("2")) {
+		else if (e.equals("2")) {
 			playMegusta();
 		}
-		if (e.equals("3")) {
+		else if (e.equals("3")) {
 			playCat();
 		}
 		
-	if (e.equals("4")) {
+		else if (e.equals("4")) {
 		playMoo();
 	
 	}
-	if (e.equals("5")) {
+		else if (e.equals("5")) {
 		playQuack();
 	}
 	
-    if (e.equals("6")) {
+		else if (e.equals("6")) {
 	playWoof();
 	}
 	}
